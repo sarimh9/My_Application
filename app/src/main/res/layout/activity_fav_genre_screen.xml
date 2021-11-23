@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f8ff"
+    android:layout_margin="8dp"
+    tools:context=".FavGenreScreen">
+
+    <TextView
+        android:id="@+id/whatIsYourFavGenreHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="100dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Just one more question -\nWhat is your favourite genre?"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/whatIsYourFavGenreHeading" />
+
+    <ImageView
+        android:id="@+id/rockImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rock"
+        app:layout_constraintBottom_toTopOf="@+id/classicalImage"
+        app:layout_constraintEnd_toStartOf="@+id/electronicImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatIsYourFavGenreHeading" />
+
+    <TextView
+        android:id="@+id/rockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROCK"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/electronicText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rockImage" />
+
+    <ImageView
+        android:id="@+id/electronicImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/electronic"
+        app:layout_constraintBottom_toTopOf="@+id/popImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rockImage"
+        app:layout_constraintTop_toBottomOf="@+id/whatIsYourFavGenreHeading" />
+
+    <TextView
+        android:id="@+id/electronicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:text="ELECTRONIC"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/electronicImage" />
+
+    <ImageView
+        android:id="@+id/classicalImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/classical"
+        app:layout_constraintBottom_toTopOf="@+id/ambientImage"
+        app:layout_constraintEnd_toStartOf="@+id/popImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rockImage" />
+
+    <TextView
+        android:id="@+id/classicalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="CLASSICAL"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/classicalImage" />
+
+    <ImageView
+        android:id="@+id/popImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pop"
+        app:layout_constraintBottom_toTopOf="@+id/countryImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/classicalImage"
+        app:layout_constraintTop_toBottomOf="@+id/electronicImage" />
+
+    <TextView
+        android:id="@+id/popText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POP"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@+id/classicalText"
+        app:layout_constraintTop_toBottomOf="@id/popImage" />
+
+    <ImageView
+        android:id="@+id/ambientImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ambient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/countryImage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classicalImage" />
+
+    <TextView
+        android:id="@+id/ambientText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMBIENT"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/countryMusicText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ambientImage" />
+
+    <ImageView
+        android:id="@+id/countryImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/country_music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ambientImage"
+        app:layout_constraintTop_toBottomOf="@+id/popImage" />
+
+    <TextView
+        android:id="@+id/countryMusicText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:text="COUNTRY MUSIC"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/countryImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
