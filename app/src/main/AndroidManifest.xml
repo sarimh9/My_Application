@@ -21,7 +21,7 @@
         <activity android:name=".FavGenreScreen" />
         <activity
             android:name=".MainActivity"
-            android:label="Ausaaf">
+            android:label="@string/app_name">
         </activity>
     </application>
 
