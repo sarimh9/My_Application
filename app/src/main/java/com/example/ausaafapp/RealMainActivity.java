@@ -1,6 +1,7 @@
 package com.example.ausaafapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
@@ -11,10 +12,16 @@ import android.widget.Toast;
 
 public class RealMainActivity extends AppCompatActivity {
 
+    public Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_real_main);
+
+        // initializing the toolbar
+        toolbar = findViewById(R.id.customToolbar);
+        setSupportActionBar(toolbar);
 
         ConstraintLayout constraintLayout = findViewById(R.id.mainLayoutCL);
 

@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
     android:background="#f0f8ff"
     tools:context=".MainActivity">
+    <include
+        layout="@layout/custom_toolbar"/>
 
     <TextView
         android:id="@+id/sunOrRainHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-thin"
+        android:gravity="center"
         android:minHeight="100dp"
         android:text="Do you like Sun \nor Rain?"
         android:textColor="@color/black"

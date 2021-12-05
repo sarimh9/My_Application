@@ -8,14 +8,16 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
         android:background="#f0f8ff"
         tools:context=".Screen4">
+        <include
+            layout="@layout/custom_toolbar"/>
 
         <TextView
             android:id="@+id/screen4Heading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
             android:fontFamily="sans-serif-thin"
             android:gravity="center"
             android:minHeight="100dp"

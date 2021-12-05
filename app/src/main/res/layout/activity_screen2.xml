@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="8dp"
     android:background="#f0f8ff"
     tools:context=".Screen2">
+
+    <include
+        layout="@layout/custom_toolbar"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-thin"
         android:gravity="center"
         android:text="So you love Rain - Yayyy!\nSo what excites you the most about rain?"
         android:textColor="@color/black"
         android:textSize="24sp"
-        android:fontFamily="sans-serif-thin"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 

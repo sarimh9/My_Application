@@ -5,19 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0f8ff"
-    android:layout_margin="8dp"
     tools:context=".FavGenreScreen">
+    <include
+        layout="@layout/custom_toolbar"/>
 
     <TextView
         android:id="@+id/whatIsYourFavGenreHeading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-thin"
         android:gravity="center"
         android:minHeight="100dp"
-        android:fontFamily="sans-serif-thin"
         android:text="Just one more question -\nWhat is your favourite genre?"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent" />
 
